@@ -1,4 +1,10 @@
-// Este codigo, al ejecutarse, le pide un nombre (o incluso acepta caracteres) de personajes de Ricky y Morty al usuario y lo contrasta con la informacion del api para devolver una lista de coincidencias. Es bastante tolerante con las busquedas, si escribo "A", me muestra todos los personajes que tenga la A en su nombre.
+/* Este codigo, al ejecutarse, le pide un nombre (o incluso acepta caracteres) de personajes de Ricky y Morty al usuario y lo contrasta con la informacion
+del api para devolver una lista de coincidencias. Es bastante tolerante con las busquedas, si escribo "A", me muestra todos los personajes que
+tenga la A en su nombre.
+
+Para usarse desde el navegador (con la asistencia de Express), se corre el comando "npm run dev" en la consola en la raiz del proyecto,
+se abre el navegador, y se ingresa "localhost:3000" en el buscador
+*/
 const express = require('express'); // framework que crea el canva web
 const axios = require('axios'); //lo que trae lo que necesitamos del api
 
