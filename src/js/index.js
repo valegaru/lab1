@@ -1,3 +1,4 @@
+// Este codigo, al ejecutarse, le pide un nombre (o incluso acepta caracteres) de personajes de Ricky y Morty al usuario y lo contrasta con la informacion del api para devolver una lista de coincidencias. Es bastante tolerante con las busquedas, si escribo "A", me muestra todos los personajes que tenga la A en su nombre.
 const express = require('express'); // framework que crea el canva web
 const axios = require('axios'); //lo que trae lo que necesitamos del api
 
@@ -49,3 +50,17 @@ app.post('/', async (req, res) => {
 app.listen(port, () => {
 	console.log(`Aplicación escuchando en http://localhost:${port}`);
 });
+
+/*
+Dependencias del proyecto
+axios: Se utiliza para hacer solicitudes HTTP a la API de Rick y Morty. La elegí porque es una biblioteca fácil de usar para hacer solicitudes HTTP en Node.js.
+
+express: Lo utilizo aqui para abrir el programa en pagina web.
+
+
+Dependencias de desarrollador
+nodemon: Se utiliza para reiniciar automáticamente la aplicación cuando se detectan cambios en los archivos. Evita tener que reiniciar manualmente cada vez que se hacen cambios en el código.
+
+eslint : Se utiliza para analizar el código en busca de errores y aplicar un estilo de codificación consistente.
+
+*/
